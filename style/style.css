@@ -1,9 +1,257 @@
-/* nav style */
- nav {
+
+.header {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero-section {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #DFF3E4;
 }
 
-.nav-title{
-  font-weight: 800;
-  font-size: 45px;
- }  
+.explore-btn {
+  background-color: #005A4C;
+  color: #FFF;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #003F35;
+}
+
+.graphic {
+  position: relative;
+  max-width: 40%;
+}
+
+.graphic img {
+  width: 100%;
+}
+
+/* styles.css */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F8F9FA;
+  color: #333;
+}  */
+
+.vision-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ .card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+} 
+
+.learn-more-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  filter: brightness(0.9);
+}
+
+.cards {
+  
+  min-width: 200px;
+  max-width: 250px;
+  background-color: hsl(0, 20%, 84%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+.card-content {
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section{
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.news-section{
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.recent-news h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.recent-news p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+ .news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+} 
+
+.news-item img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.source {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+ .description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+} 
+
+.read-more-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #006400;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #004d00;
+}
+
+.donate-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donate-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.donation-btn {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donation-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.donation-btn.active {
+  background-color: #d8f3dc;
+  border-color: #34a853;
+}
+
+.custom-amount {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.custom-amount:focus {
+  outline: none;
+  border-color: #34a853;
+  box-shadow: 0 0 5px rgba(52, 168, 83, 0.5);
+}
+
+.submit-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #006400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #004d00;
+}
+
